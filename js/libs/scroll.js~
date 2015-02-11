@@ -1,0 +1,8 @@
+
+$(document).ready(function() {
+$('.col-pr').enscroll({
+    showOnHover: true,
+    verticalTrackClass: 'track3',
+    verticalHandleClass: 'handle3'
+});
+}

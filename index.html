@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -16,50 +15,51 @@
 
 </head>
 <body>
-<!--Load top menu from top-menu.html-->
-    <div id="header">
-        <div class="logo">
-            <a href="./"><img src="images/deak-logo1.png" alt="DEAK"></a>
-        </div>
-        <!--menu-->
-        <nav>
-            <ul>
-                <li id="page-despre" class="li-despre">
-                    <a href="#despre" onclick="renderDespre(); return false;">DESPRE</a>
-                </li>
-                <li>|</li>
-                <li id="page-portofoliu" class="li-portofoliu">
-                    <a href="#portofoliu" onclick="renderPortofoliu(); return false"> PORTOFOLIU</a>
-                </li>
-                <li>|</li>
-                <li id="page-constructii" class="li-constructii">
-                    <a href="constructii.html">CONSTRUCTII</a>
-                </li>
-                <li>|</li>
-                <li id="page-info-proiectare" class="li-info-proiectare">
-                    <a href="info-proiectare.html">INFO PROIECTARE</a>
-                </li>
-                <li>|</li>
-                <li class="li-contact">
-                    <a data-toggle="modal" data-target="#requestManualModal">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
-        <!--end menu-->
-        <div class="btn_social">
-            <a href="#"><img src="images/facebook.png" alt="Facebook" onmouseover="this.src='images/facebook_black.png';" onmouseout="this.src='images/facebook.png';"></a>
-            <a href="#"><img src="images/pinterest.png" alt="Facebook" onmouseover="this.src='images/pinterest_black.png';" onmouseout="this.src='images/pinterest.png';"></a>
-        </div>
+<!------------------------- top menu ----------------------------------->
+<div id="header">
+    <div class="logo">
+        <a href="./"><img src="images/deak-logo1.png" alt="DEAK"></a>
     </div>
-        <!--<script>-->
-            <!--$( "#header" ).load( "top-menu.html");-->
-        <!--</script>-->
-
-<!--End top menu-->
-    <div class="wrap">
+    <!--menu-->
+    <nav>
+        <ul>
+            <li id="page-despre" class="li-despre">
+                <a href="#despre" onclick="renderDespre(); return false;">DESPRE</a>
+            </li>
+            <li>|</li>
+            <li id="page-portofoliu" class="li-portofoliu">
+                <a href="#portofoliu" onclick="renderPortofoliu(); return false"> PORTOFOLIU</a>
+            </li>
+            <li>|</li>
+            <li id="page-constructii" class="li-constructii">
+                <a href="#constructii" onclick="renderConstructii(); return false">CONSTRUCTII</a>
+            </li>
+            <li>|</li>
+            <li id="page-info-proiectare" class="li-info-proiectare">
+                <a href="#info-proiectare" onclick="renderInfoProiecte(); return false">INFO PROIECTARE</a>
+            </li>
+            <li>|</li>
+            <li class="li-contact">
+                <button class="btn btn-link" data-toggle="modal" data-target="#requestManualModal">CONTACT</button>
+            </li>
+        </ul>
+    </nav>
+    <!--end menu-->
+    <div class="btn_social">
+        <a href="#"><img src="images/facebook.png" alt="Facebook" onmouseover="this.src='images/facebook_black.png';" onmouseout="this.src='images/facebook.png';"></a>
+        <a href="#"><img src="images/pinterest.png" alt="Facebook" onmouseover="this.src='images/pinterest_black.png';" onmouseout="this.src='images/pinterest.png';"></a>
+    </div>
+</div>
+<!------------------------- / top menu --------------------------------->
+<div class="wrap">
+    <div id="page-wrap">
+        <div id="main-content">
+            <div id="guts">
                 <div id="content"></div>
+            </div>
+        </div>
     </div>
-<!-- Modal send message-->
+</div>
 <!-- Modal send message-->
 <div class="modal fade" id="requestManualModal" tabindex="-1" role="dialog"
      aria-labelledby="downloadManualModalLabel" aria-hidden="true">
@@ -71,54 +71,40 @@
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span>
                         </button>
                     </div>
-                    <img id="loading2" src="images/ajax-loader.gif" alt="Loading" title="Loading"
-                         style="display: none; margin:auto;"/>
+                    <img id="loading2" src="images/ajax-loader.gif" alt="Loading" title="Loading" style="display: none; margin:auto;"/>
                     <div id="feedbackForm2" class="container" style="display: none; height: 40px;"></div>
                     <div id="elementsForm2">
-                        <div class="container"
-                             style="padding-left: 15px; color: #4DC7E9; font-size: 20px; line-height: 20px; font-weight: normal; font-family: 'DINRegular';  text-align: left;">
+                        <div class="container" style="padding-left: 15px; color: #4DC7E9; font-size: 20px; line-height: 20px; font-weight: normal; font-family: 'DINRegular'; text-align: left;">
                             ARH. VALER DEAK<br/>
                             <p style="color: #57787F;">STR. DR. HERESCU NR 23,<br/>BUCURESTI, SECTOR 5<br/>MOBIL: 0741292940</p>
                             <br/>NUME
                         </div>
                         <div class="form-group">
                             <div class="col-sm-8">
-                                <input style="border: 1px solid #4DC7E9; color: #4DC7E9; font-family: 'DINRegular'; background-color: transparent; border-radius: 0; width: 510px; margin-left: 15px;"
-                                       type="text" class="form-control" id="Request_client_name"
-                                       name="Request[client_name]" value=""/>
-                                <!--<span class="help-block">Your name</span>-->
+                                <input style="border: 1px solid #4DC7E9; color: #4DC7E9; font-family: 'DINRegular'; background-color: transparent; border-radius: 0; width: 510px; margin-left: 15px;" type="text" class="form-control" id="Request_client_name" name="Request[client_name]" value=""/>
                             </div>
                         </div>
-                        <div class="container"
-                             style="padding-left: 15px; color: #4DC7E9; font-size: 20px; line-height: 20px; font-weight: normal; font-family: 'DINRegular';  text-align: left;">
+                        <div class="container" style="padding-left: 15px; color: #4DC7E9; font-size: 20px; line-height: 20px; font-weight: normal; font-family: 'DINRegular';  text-align: left;">
                             E-MAIL
                         </div>
                         <div class="form-group">
                             <div class="col-sm-8">
-                                <input style="border: 1px solid #4DC7E9; color: #4DC7E9; font-family: 'DINRegular'; background-color: transparent; border-radius: 0; width: 510px; margin-left: 15px;"
-                                       type="text" class="form-control" id="Request_client_email"
-                                       name="Request[client_email]" value=""/>
+                                <input style="border: 1px solid #4DC7E9; color: #4DC7E9; font-family: 'DINRegular'; background-color: transparent; border-radius: 0; width: 510px; margin-left: 15px;" type="text" class="form-control" id="Request_client_email" name="Request[client_email]" value=""/>
                             </div>
                         </div>
-                        <div class="container"
-                             style="padding-left: 15px; color: #4DC7E9; font-size: 20px; line-height: 20px; font-weight: normal; font-family: 'DINRegular';  text-align: left;">
+                        <div class="container" style="padding-left: 15px; color: #4DC7E9; font-size: 20px; line-height: 20px; font-weight: normal; font-family: 'DINRegular';  text-align: left;">
                             TRIMITE MESAJ
                         </div>
                         <div class="form-group">
                             <div class="col-sm-8">
-                                <textarea
-                                        style="border: 1px solid #4DC7E9; color: #4DC7E9; font-family: 'DINRegular'; background-color: transparent; border-radius: 0; width: 510px; margin-left: 15px;"
-                                        class="form-control"
-                                        id="Request_colab_request" name="Request1[colab_request]" rows="8"></textarea>
+                                <textarea style="border: 1px solid #4DC7E9; color: #4DC7E9; font-family: 'DINRegular'; background-color: transparent; border-radius: 0; width: 510px; margin-left: 15px;" class="form-control" id="Request_colab_request" name="Request1[colab_request]" rows="8"></textarea>
                             </div>
                         </div>
 
                     </div>
                 </div>
                 <div class="modal-footer" style="border-top-width: 0; padding:0 20px 20px; margin-top:-15px; margin-right: 15px;">
-                    <button id="submitButton2"
-                            style="font-family: 'DINRegular';  color: #4DC7E9; font-size: 20px; padding: 3px 30px 3px 30px; background-color: transparent; border: 1px solid #4DC7E9; border-top: 0; border-radius: 0;"
-                            type="submit" class="btn btn-success active">
+                    <button id="submitButton2" style="font-family: 'DINRegular';  color: #4DC7E9; font-size: 20px; padding: 3px 30px 3px 30px; background-color: transparent; border: 1px solid #4DC7E9; border-top: 0; border-radius: 0;" type="submit" class="btn btn-success active">
                         TRIMITE
                     </button>
                 </div>
@@ -127,7 +113,6 @@
     </div>
 </div>
 <!-- End modal send message-->
-<!--End modal message-->
 <!-- All Javascript at the bottom of the page for faster page loading -->
 
 <script type="text/javascript" src="js/libs/jquery-1.11.2.min.js"></script>
@@ -137,18 +122,19 @@
 <script type="text/javascript" src="js/libs/jquery.cookie.js"></script>
 <script type="text/javascript" src="js/libs/jquery.backstretch.js"></script>
 <script type="text/javascript" src="js/libs/enscroll-0.6.1.min.js"></script>
-<script type="text/javascript" src="js/libs/bootstrapValidator.min.js"></script>
+<script type="text/javascript" src="js/libs/validate/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/libs/validate/additional-methods.min.js"></script>
 <script type="text/javascript" src="slick/slick.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
-<script type="text/javascript" src="js/test-app-deak.js"></script>
+<script type="text/javascript" src="js/deakCommon.js"></script>
 
 <script>
     $(document).ready(function () {
         getPage();
-        $("nav a").not(":last").click(function(){
+        $("nav a").not(":last").click(function () {
             console.log('mesaj');
             // Destroy the old Backstretches
-            $(":backstretch").each(function() {
+            $(":backstretch").each(function () {
                 $(this).data("backstretch").destroy();
             });
         });

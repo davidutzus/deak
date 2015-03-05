@@ -1,0 +1,123 @@
+<!-- Modal login-->
+<div class="modal fade deak-modal-user-login" id="requestLoginModal" tabindex="-1" role="dialog"
+     aria-labelledby="downloadManualModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form name="login" class="form-horizontal modal-user-login" method="post">
+                <div class="modal-body">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div id="login-elementsForm2">
+                        <div class="container proiect-id-label">
+                            NUMAR PROIECT
+                        </div>
+
+                        <div class="form-group">
+                            <div id="messageBox-userid"></div>
+                            <div class="col-sm-8">
+                                <input type="text" minlength="6" class="form-control proiect-id-input" id="Request_client_name" name="userid" value=""/>
+                            </div>
+                        </div>
+                        <div class="container password-label">
+                            PAROLA
+                        </div>
+                        <div class="form-group">
+                            <div id="messageBox-passwrd"></div>
+                            <div class="col-sm-8">
+                                <input type="password" class="form-control password-input" id="Request_client_passwd" name="passwrd" value=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" onclick="check(this.form)"> LOG IN</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End modal login-->
+<ul>
+    <li>
+        <hr>
+    <li>
+    <li style="width: 235px;">
+        <div class="navSection nav-section">
+            <a id="nav1" onclick="hideclientproject()" href="" class="currentLink">ANSAMBLURI</a>
+        </div>
+    </li>
+    <li>
+        <hr>
+    </li>
+    <li style="width: 235px;">
+        <div class="navSection nav-section">
+            <a id="nav2" onclick="hideclientproject()" href="">REZIDENTIALE</a>
+        </div>
+    </li>
+    <div id="client_project" style="display: none;">
+        <li>
+            <hr>
+        </li>
+        <li style="width: 235px;">
+            <div>
+                <a onclick="showclientproject()" style="cursor: pointer;">048/2014</a>
+            </div>
+        </li>
+    </div>
+    <div id="log_in">
+        <li>
+            <hr>
+        </li>
+        <li><a data-toggle="modal" data-target="#requestLoginModal" class="btn-login" style="cursor: pointer;">LOG IN
+            <div class="login"><img src="images/hover-login.png"/></div>
+        </a></li>
+    </div>
+    <div id="log_out" style="display: none;">
+        <li>
+            <hr>
+        </li>
+        <li><a onclick="delcookie()" href="">LOG OUT</a></li>
+        <li>
+    </div>
+</ul>
+<script>
+    setTimeout(function () {
+        if ($.cookie('isLoggedIn') == 'true') {
+            //alert($.cookie('isLoggedIn'));
+            $('#client_project').css('display', 'block');
+            $('#log_out').css('display', 'block');
+            $('#log_in').css('display', 'none');
+
+        }
+    }, 300);
+    var isLoggedIn = false;
+    function check(form) {
+        if (form.userid.value == "048/2014" && form.passwrd.value == "admin") {
+            isLoggedIn = true;
+            document.cookie = "isLoggedIn=true;";
+        }
+        return false;
+    }
+    function delcookie() {
+        $.cookie('isLoggedIn', null);
+    }
+    $('.modal-user-login').validate({
+        rules: {
+            userid: {
+                required: true,
+                minlength: 6
+            },
+            passwrd: {
+                required: true,
+                minlength: 5
+            }
+        },
+        messages: {
+            userid: 'Introduceti va rog numarul de contract! ',
+            passwrd: 'Intruduceti parola primita!'
+        }
+    });
+</script>

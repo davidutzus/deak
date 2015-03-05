@@ -23,14 +23,14 @@ $(function() {
                 .find("#guts")
                 .fadeOut(200, function() {
                     $mainContent.hide().load(href + " #guts", function() {
-                        $mainContent.fadeIn(33200, function() {
+                        $mainContent.fadeIn(200, function() {
                             $pageWrap.animate({
                                 height: baseHeight + $mainContent.height() + "px"
                             });
                         });
                         $("nav a").removeClass("current");
                         console.log(href);
-                        $("nav a[href$='"+href+"']").addClass("current");
+                        $("nav a[href$="+href+"]").addClass("current");
                     });
                 });
         }
@@ -53,7 +53,7 @@ function getPage () {
     });
 }
 function renderDespre () {
-    $( "#content" ).wrap( '<div id="page-wrap"><div id="maincontent"><div id="guts"></div></div></div>' );
+    //$( "#content" ).wrap( '<div id="page-wrap"><div id="maincontent"><div id="guts"></div></div></div>' );
     $('#content').html('<div class="sidebar"></div><div class="col-pr"><div class="innerCol"><div id="despre_img"></div><p id="despre_noi_text"></p></div></div>');
     //  get image
     var pageDespreimg= "";
@@ -67,7 +67,7 @@ function renderDespre () {
     console.log("despre");
 }
 function renderPortofoliu () {
-    $( "#content" ).wrap( '<div id="page-wrap"><div id="maincontent"><div id="guts"></div></div></div>' );
+    //$( "#content" ).wrap( '<div id="page-wrap"><div id="maincontent"><div id="guts"></div></div></div>' );
     $('#content').html('<div id="sidebar" class="sidebar"></div><div class="col-pr"><div id="proiecte_ans"></div><div id="proiecte_rez"></div></div>');
     $( "#sidebar" ).load( "ksidebar.html");
     //ansambluri
@@ -99,21 +99,81 @@ function renderPortofoliu () {
     resizeAll();
     console.log("portofoliu");
 }
+function renderConstructii () {
+    //$( "#content" ).wrap( '<div id="page-wrap"><div id="maincontent"><div id="guts"></div></div></div>' );
+    $('#content').html('<div id="sidebar" class="sidebar"></div><div class="col-pr"><div id="constructii-nerezidentiale"></div><div id="constructii-rezidentiale"></div></div>');
+    $( "#sidebar" ).load( "ksidebar.html");
+    // constructii nerezidentiale
+    var pageConstructii_nerez= "";
+    $.each(content.pages.constructii_page.constructii.nerezidentiale, function () {
+        pageConstructii_nerez += '<div class="project" >';
+        pageConstructii_nerez += '<a href = "' + this.construction_link + '">';
+        pageConstructii_nerez += '<img class="lazy" src="' + this.main_image + '"/>';
+        pageConstructii_nerez += '<div class="project_name">' + this.construction_name + '</div>';
+        pageConstructii_nerez += '</a>';
+        pageConstructii_nerez += '</div>';
+    });
+
+    $('#constructii-nerezidentiale').append(pageConstructii_nerez).before( '<div id="pag-constructii-nerezidentiale"></div>' );
+
+    //  constructii rezidentiale
+    var pageConstructii_rez= "";
+    $.each(content.pages.constructii_page.constructii.rezidentiale, function () {
+        pageConstructii_rez += '<div class="project" >';
+        pageConstructii_rez += '<a href = "' + this.construction_link + '">';
+        pageConstructii_rez += '<img class="lazy" src="' + this.main_image + '"/>';
+        pageConstructii_rez += '<div class="project_name">' + this.construction_name + '</div>';
+        pageConstructii_rez += '</a>';
+        pageConstructii_rez += '</div>';
+    });
+    $('#constructii-rezidentiale').append(pageConstructii_rez).before( '<div id="pag-constructii-rezidentiale"></div>' );
+    $('body') .css("background-image", "url(/images/about.jpg)");
+    $('.col-pr').enscroll();
+    resizeAll();
+    console.log("constructii");
+}
+function renderInfoProiecte () {
+    //$( "#content" ).wrap( '<div id="page-wrap"><div id="maincontent"><div id="guts"></div></div></div>' );
+    $('#content').html('<div id="sidebar" class="sidebar"></div><div class="col-pr"><div id="autorizatie-constructie"></div><div id="studiul-temale"></div></div>');
+    $( "#sidebar" ).load( "ksidebar.html");
+    // autorizatie
+    var pageInfoProiecte_autorizatie= "";
+        pageInfoProiecte_autorizatie += '<div class="innerCol autorizatie-constructie" >';
+        pageInfoProiecte_autorizatie +=  content.pages.info_proiectare_page.autorizatie_constructie ;
+        pageInfoProiecte_autorizatie += '</div>';
+
+    $('#autorizatie-constructie').append(pageInfoProiecte_autorizatie).before( '<div id="pag-info-proiecte-autorizatie"></div>' );
+
+    // temale
+    var pageInfoProiecte_temale= "";
+        pageInfoProiecte_temale += '<div class="innerCol studiul-temale" >';
+        pageInfoProiecte_temale +=  content.pages.info_proiectare_page.studiu_temale ;
+        pageInfoProiecte_temale += '</div>';
+    $('#studiul-temale').append(pageInfoProiecte_temale).before( '<div id="pag-info-proiecte-temale"></div>' );
+    $('body') .css("background-image", "url(/images/info.jpg)");
+    $('.col-pr').enscroll();
+    resizeAll();
+    console.log("info proiecte");
+}
 var hashTag = location.hash;
 function initContent () {
-    if (hashTag === "#despre") {
+    if (hashTag === '#despre') {
         renderDespre();
-    } else if (hashTag === "#portofoliu"){
+    } else if (hashTag === '#portofoliu') {
         renderPortofoliu();
+    } else if (hashTag === '#constructii') {
+        renderConstructii();
+    } else if (hashTag === '#info-proiectare') {
+        renderInfoProiecte();
     }
     if (hashTag !== '') {
         // Destroy the old Backstretches
         $(":backstretch").each(function() {
             $(this).data("backstretch").destroy();
         });
-        console.log("test");
     }
 }
+
 //end cod importat din pagini
 //
 //function pageContent (){

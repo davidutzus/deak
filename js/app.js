@@ -43,9 +43,18 @@ function resizeAll() {
     var menuWidth = $(window).height ();
     $('.slider-client').find('img').css('width', menuWidth + 'px');
 }
+/**
+ *  active state menu
+ */
+$("nav li").click(function ( e ) {
+    e.preventDefault();
+    $("nav li a.active").removeClass("active"); //Remove any "active" class
+    $("a", this).addClass("active"); //Add "active" class to selected tab
+});
+
+
 /*--------------------------End of Resize script---------------------------------------------------*/
 $(document).ready(function() {
-
 /*--------------------------Scroll script----------------------------------------------------------*/
 
 //$('.col-pr').enscroll({

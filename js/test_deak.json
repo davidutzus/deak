@@ -23,7 +23,7 @@
           {
             "prj_name": "RESORT TURCOAZIST 2",
             "main_image": "images/project0.jpg",
-            "prj_link": "turcoazist.html#"
+            "prj_link": "turcoazist.html"
           }
         ],
         "rezidentiale": [
@@ -35,7 +35,7 @@
           {
             "prj_name": "RESORT Rezidentiale 2",
             "main_image": "images/project2.jpg",
-            "prj_link": "turcoazist.html#"
+            "prj_link": "turcoazist.html"
           }
         ]
       }
@@ -44,28 +44,32 @@
       "constructii": {
         "nerezidentiale": [
           {
-            "prj_name": "RESORT \"CONSTRUCTII 1\"",
+            "construction_name": "RESORT \"CONSTRUCTII 1\"",
             "main_image": "images/project0.jpg",
-            "prj_link": "turcoazist.html"
+            "construction_link": "turcoazist.html"
           },
           {
-            "prj_name": "RESORT \"CONSTRUCTII 2\"",
+            "construction_name": "RESORT \"CONSTRUCTII 2\"",
             "main_image": "images/project0.jpg",
-            "prj_link": "constructie_page_details.html#"
+            "construction_link": "constructie_page_details.html#"
           }
         ],
         "rezidentiale": [
           {
-            "prj_name": "RESORT \"Rezidentiale 1\"",
+            "construction_name": "RESORT \"Rezidentiale 1\"",
             "main_image": "images/project2.jpg",
-            "prj_link": "constructie_page_details.html#"
+            "construction_link": "constructie_page_details.html#"
           },
           {
-            "prj_name": "RESORT \"Rezidentiale 2\"",
+            "construction_name": "RESORT \"Rezidentiale 2\"",
             "main_image": "images/project2.jpg",
-            "prj_link": "constructie_page_details.html#"
+            "construction_link": "constructie_page_details.html#"
           }
         ]
+      },
+      "section": {
+        "nerezidentiale": "NEREZIDENTIALE",
+        "rezidentiale": "REZIDENTIALE"
       }
     },
     "info_proiectare_page":{

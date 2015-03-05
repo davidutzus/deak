@@ -131,22 +131,20 @@
 <script>
     $(document).ready(function () {
         getPage();
-        $("nav a").not(":last").click(function () {
-            console.log('mesaj');
+        $("nav li").not(":last").click(function () {
             // Destroy the old Backstretches
             $(":backstretch").each(function () {
                 $(this).data("backstretch").destroy();
             });
         });
-//        $( "#modal-msg" ).load( "modal-msg.html");
         $.backstretch([
             "images/slide/1.jpg",
             "images/slide/2.jpg",
             "images/slide/3.jpg",
             "images/slide/4.jpg"
         ], {
-            fade: 750,	//Speed of Fade
-            duration: 4000 	// The length of Time the image is display
+            fade: 750,
+            duration: 4000
         });
     });
 </script>

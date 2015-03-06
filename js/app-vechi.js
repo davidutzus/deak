@@ -22,12 +22,6 @@ function resizeAll() {
 	var winWidth = $(window).width()/2-5;
 	$(".portofoliuLeft").width(winWidth);
 	$(".portofoliuRight").width(winWidth);
-    //$("#videoPlayer").width(winWidth);
-
-
-
-    //var winHeight = winWidth*(9/16);
-   // $("#videoPlayer").height(winHeight);
 
 
 	var origWidth  = $(window).width();
@@ -56,8 +50,6 @@ function resizeAll() {
 }
 window.onload = resizeAll;
 window.onresize = resizeAll;
-
-
 
     $('.portofoliu-top-image').slick({
 	slidesToShow: 1,
@@ -110,16 +102,6 @@ $('#portofoliu-slider-exterior ul li').each(function (index) {
         $(this).html('<div style="float: left; margin-left: -10px; width: 25px; height: 15px; border: 1px solid #4DC7E9; -webkit-border-radius: 0 0 10px 0; -moz-border-radius: 0 0 10px 0; -khtml-border-radius: 0 0 10px 0; border-radius: 0 0 10px 0;"></div>');
     });
 
-
-/*$('#portofoliuFullScreen').slick({
-	dots: true,
-	variableWidth: true,
-	infinite: true,
-	autoplay : true,
-	speed: 300,
-	slidesToShow: 1,
-	slidesToScroll: 1
-});*/
 $('#portofoliuFullScreen').slick({
         dots: true,
         infinite: true,

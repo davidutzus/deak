@@ -51,26 +51,8 @@ $("nav li").click(function ( e ) {
     $("nav li a.active").removeClass("active"); //Remove any "active" class
     $("a", this).addClass("active"); //Add "active" class to selected tab
 });
-
-
 /*--------------------------End of Resize script---------------------------------------------------*/
 $(document).ready(function() {
-/*--------------------------Scroll script----------------------------------------------------------*/
-
-//$('.col-pr').enscroll({
-//    showOnHover: true,
-//    verticalTrackClass: 'track3',
-//    verticalHandleClass: 'handle3'
-//});
-//$('.portofoliu').enscroll({
-//    showOnHover: true,
-//    verticalTrackClass: 'track3',
-//    verticalHandleClass: 'handle3'
-//
-//});
-
-/*-------------------------- End of Scroll script-----------------------------------------------*/
-
 
 /*--------------------------Resize script------------------------------------------------------*/
 

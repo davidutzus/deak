@@ -18,24 +18,28 @@
           {
             "prj_name": "RESORT TURCOAZIST 1",
             "main_image": "images/project0.jpg",
-            "prj_link": "turcoazist.html"
+            "prj_link": "turcoazist.html",
+            "project_id": "52"
           },
           {
             "prj_name": "RESORT TURCOAZIST 2",
             "main_image": "images/project0.jpg",
-            "prj_link": "turcoazist.html"
+            "prj_link": "turcoazist.html",
+            "project_id": "54"
           }
         ],
         "rezidentiale": [
           {
             "prj_name": "RESORT Rezidentiale 1",
             "main_image": "images/project2.jpg",
-            "prj_link": "turcoazist.html"
+            "prj_link": "turcoazist.html",
+            "project_id": "53"
           },
           {
             "prj_name": "RESORT Rezidentiale 2",
             "main_image": "images/project2.jpg",
-            "prj_link": "turcoazist.html"
+            "prj_link": "turcoazist.html",
+            "project_id": "55"
           }
         ]
       }
@@ -46,24 +50,28 @@
           {
             "construction_name": "RESORT \"CONSTRUCTII 1\"",
             "main_image": "images/project0.jpg",
-            "construction_link": "turcoazist.html"
+            "construction_link": "turcoazist.html",
+            "project_id": "50"
           },
           {
             "construction_name": "RESORT \"CONSTRUCTII 2\"",
             "main_image": "images/project0.jpg",
-            "construction_link": "constructie_page_details.html#"
+            "construction_link": "constructie_page_details.html#",
+            "project_id": "48"
           }
         ],
         "rezidentiale": [
           {
             "construction_name": "RESORT \"Rezidentiale 1\"",
             "main_image": "images/project2.jpg",
-            "construction_link": "constructie_page_details.html#"
+            "construction_link": "constructie_page_details.html#",
+            "project_id": "49"
           },
           {
             "construction_name": "RESORT \"Rezidentiale 2\"",
             "main_image": "images/project2.jpg",
-            "construction_link": "constructie_page_details.html#"
+            "construction_link": "constructie_page_details.html#",
+            "project_id": "51"
           }
         ]
       },
@@ -76,6 +84,15 @@
       "autorizatie_constructie":"Cateva informatii de proiectare ce va vor ajuta in intelegerea preliminara a abordarii viitorului dvs. proiect si desfasurarea acestuia. In aceasta pagina incercam sa va informam succint care sunt fazele de proiectare, care sunt actele necesare pentru demararea proiectarii, ce responsabilitati trebui sa fie asteptate de la echipa cu care veti lucra, si cativa din clientii nostrii.<br/> tel: 0755.150.550<br/> Principalele faze ale unui proiect<br/>  - ST / CD - Studiul de Tema / Concept Design: este prima faza de proiectare in care proiectantului de arhitectura, pe baza temei de proiectare si a cerintelor dvs. face o propunere de idee, materializata prin planuri, fatade si imagini perspective.<br/> - DOC - Documentatiile: sunt documentele scrise si desenate, necesare pentru obtinerea Certificatului de Urbanism, a avizelor / acordurilor de construire. Dvs. trebuie sa puneti la dispozitia Proiectantul General documentele / actele de proprietate, cadastru, etc. in copie.<br/> - DTAC / PAC: Documentatia Tehnica pentru a obtine Autorizatia de Constructie. Proiectantul de arhitectura face documentatiile scrise si desenate ale proiectului, Proiectantul de structuri realizeaza documentatia pana la cota ±0.00, Proiectantii de instalatii realizeaza partile scrise si desenate necesare. Dvs. va trebui sa furnizati actele solicitate prin Certificatul de Urbanism [acte legalizate, extras Carte Funciara, dovada platilor taxelor]. Tot in sarcina Dvs. este si furnizarea Studiului Geotehnic si a Ridicarii Topografice in sistem Stereo '70 sau coordonate GPS.<br/> - DTDE / PTH, Documentatia Tehnica Detalii de Executie: contine toate proiectele aferente specialitatilor implicate in proiectarea si constructia unei constructii noi, cu toate informatiile necesare pentru faza de executie a imobilului<br/> - AS - Asistenta de Santier: pe parcursul executiei, impreuna cu Dvs. sau un reprezentant, se vor face vizite pe santier pentru verificarea executiei.<br/>  Intrebari frecvente:<br/> Puteti accesa meniul de Blog unde am postat diverse intrebari pe care le-am primit de-a lungul timpului de la clientii nostrii si la care am raspuns in speranta ca vor fi de ajutor si altor persoane, pe viitor. Link: www.cubarhitect.ro/blog/intrebari-frecvente<br/>  Tarife si Preturi Consiliere, Proiectare si Asistenta<br/> Download fisier PDF<br/> Actele preliminare<br/>  Actul minimal in baza carcaruia se poate executa un proiect este Certificatul de Urbanism [CU] este actul emis de primaria pe raza careia este pozitionat terenul pe care se doreste sa se construiasca. Acesta reglementeaza din punct de vedere urbanistic, juridic si economic natura viitoarei constructii. Tot prin CU sunt indicate avizele si acordurile necesare. Toate avizele si acordurile se obtin in baza acestui CU si sunt valabile doar impreuna cu acesta. Tot in CU sunt specificate actele pe care Dvs. trebuie sa le puneti la dispozitie - acte de proprietate in copie legalizata, extrase de Carte Funciara, extrase de la autoritatile fiscale, etc.<br/> Reglementarile urbanistice pentru terenul dvs: POT, CUT, Hmax, retrageri minime fata de limite.<br/> Procentul de Ocupare al terenului [POT] reglementeaza suprafata maxima la sol a viitoarei dvs constructii. Este exprimata procentual si reprezinta raportul intre suprafata la sol si suprafata terenului. POT-ul reglementat prin CU se poate modifica, prin intermediul unui Proiect de Urbanism de Detaliu, doar in anumite conditii. Coeficientul de Utilizare al Terenului [CUT] este indicele ce reglementeaza suprafata maxima desfasurata supraterana ce se poate realiza pe terenul dvs. Se calculeaza ca fiind raportul dintre suprafata construita supraterana si suprafata terenului. Acest CUT in cele mai multe cazuri nu se poate modifica, desi in situatii aparte se poate face un Proiect de Urbanism Zonal [PUZ] prin care se poate modifica acest coeficient, dar nu mai mult de 20% suplimentar fata de ceea ce este specificat in PUG.<br/><br/><br/><br/><br/>",
       "studiu_temale":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
     }
-
-  }
+  },
+  "project_order": [
+    55,
+    54,
+    53,
+    52,
+    51,
+    50,
+    49,
+    48
+  ]
 }

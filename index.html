@@ -46,8 +46,10 @@
     </nav>
     <!--end menu-->
     <div class="btn_social">
-        <a href="#"><img src="images/facebook.png" alt="Facebook" onmouseover="this.src='images/facebook_black.png';" onmouseout="this.src='images/facebook.png';"></a>
-        <a href="#"><img src="images/pinterest.png" alt="Facebook" onmouseover="this.src='images/pinterest_black.png';" onmouseout="this.src='images/pinterest.png';"></a>
+        <a href="#"><img src="images/facebook.png" alt="Facebook" onmouseover="this.src='images/facebook_black.png';"
+                         onmouseout="this.src='images/facebook.png';"></a>
+        <a href="#"><img src="images/pinterest.png" alt="Facebook" onmouseover="this.src='images/pinterest_black.png';"
+                         onmouseout="this.src='images/pinterest.png';"></a>
     </div>
 </div>
 <!------------------------- / top menu --------------------------------->
@@ -55,7 +57,87 @@
     <div id="page-wrap">
         <div id="main-content">
             <div id="guts">
-                <div id="content"></div>
+                <div id="content">
+                    <div id="sidebar" class="sidebar">
+                        <!-- Modal login-->
+                        <div class="modal fade deak-modal-user-login" id="requestLoginModal" tabindex="-1" role="dialog"
+                             aria-labelledby="downloadManualModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <form name="login" class="form-horizontal modal-user-login" method="post">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                    <span aria-hidden="true"></span>
+                                                </button>
+                                            </div>
+                                            <div id="login-elementsForm2">
+                                                <div class="container proiect-id-label">
+                                                    NUMAR PROIECT
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div id="messageBox-userid"></div>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" minlength="6"
+                                                               class="form-control proiect-id-input"
+                                                               id="Requestclientname" name="userid" value=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="container password-label">
+                                                    PAROLA
+                                                </div>
+                                                <div class="form-group">
+                                                    <div id="messageBox-passwrd"></div>
+                                                    <div class="col-sm-8">
+                                                        <input type="password" class="form-control password-input"
+                                                               id="Request_client_passwd" name="passwrd" value=""/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" onclick="check(this.form)"> LOG IN</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End modal login-->
+                        <!-- meniu -->
+                        <ul class="list-group">
+                            <li id="prj-all" class="list-group-item navSection nav-section">
+                                <a onclick="displayAllProject()" class="currentLink">TOATE PROIECTELE</a>
+                            </li>
+                            <li id="portofoliu-ans" class="list-group-item navSection nav-section">
+                                <a onclick="hidePortofoliuRezidentiale();">ANSAMBLURI (PORTOFOLIU)</a>
+                            </li>
+                            <li id="portofoliu-rez" class="list-group-item navSection nav-section">
+                                <a onclick="hidePortofoliuNerezidentiale();">REZIDENTIALE (PORTOFOLIU)</a>
+                            </li>
+                            <li id="constructii-nerez" class="list-group-item navSection nav-section">
+                                <a onclick="hideConstructiiRezidentiale()">NEREZIDENTIALE (CONSTRUCTII)</a>
+                            </li>
+                            <li id="constructii-rez" class="list-group-item navSection nav-section">
+                                <a onclick="hideConstructiiNerezidentiale()">REZIDENTIALE (CONSTRUCTII)</a>
+                            </li>
+                            <li id="client_project" style="display: none;" class="list-group-item">
+                                <a onclick="showclientproject()" style="cursor: pointer;">048/2014</a>
+                            </li>
+                            <li id="log_in" class="list-group-item">
+                                <a data-toggle="modal" data-target="#requestLoginModal" class="btn-login"
+                                   style="cursor: pointer;">LOG IN
+                                    <div class="login"><img src="images/hover-login.png"/></div>
+                                </a>
+                            </li>
+                            <li id="log_out" style="display: none;" class="list-group-item navSection nav-section">
+                                <a onclick="delcookie()" href="">LOG OUT</a></li>
+                            </li>
+                        </ul>
+                        <!-- / meniu -->
+                    </div>
+                    <div class="col-pr"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -71,40 +153,57 @@
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span>
                         </button>
                     </div>
-                    <img id="loading2" src="images/ajax-loader.gif" alt="Loading" title="Loading" style="display: none; margin:auto;"/>
+                    <img id="loading2" src="images/ajax-loader.gif" alt="Loading" title="Loading"
+                         style="display: none; margin:auto;"/>
+
                     <div id="feedbackForm2" class="container" style="display: none; height: 40px;"></div>
                     <div id="elementsForm2">
-                        <div class="container" style="padding-left: 15px; color: #4DC7E9; font-size: 20px; line-height: 20px; font-weight: normal; font-family: 'DINRegular'; text-align: left;">
+                        <div class="container"
+                             style="padding-left: 15px; color: #4DC7E9; font-size: 20px; line-height: 20px; font-weight: normal; font-family: 'DINRegular'; text-align: left;">
                             ARH. VALER DEAK<br/>
-                            <p style="color: #57787F;">STR. DR. HERESCU NR 23,<br/>BUCURESTI, SECTOR 5<br/>MOBIL: 0741292940</p>
+
+                            <p style="color: #57787F;">STR. DR. HERESCU NR 23,<br/>BUCURESTI, SECTOR 5<br/>MOBIL:
+                                0741292940</p>
                             <br/>NUME
                         </div>
                         <div class="form-group">
                             <div class="col-sm-8">
-                                <input style="border: 1px solid #4DC7E9; color: #4DC7E9; font-family: 'DINRegular'; background-color: transparent; border-radius: 0; width: 510px; margin-left: 15px;" type="text" class="form-control" id="Request_client_name" name="Request[client_name]" value=""/>
+                                <input style="border: 1px solid #4DC7E9; color: #4DC7E9; font-family: 'DINRegular'; background-color: transparent; border-radius: 0; width: 510px; margin-left: 15px;"
+                                       type="text" class="form-control" id="Request_client_name"
+                                       name="Request[client_name]" value=""/>
                             </div>
                         </div>
-                        <div class="container" style="padding-left: 15px; color: #4DC7E9; font-size: 20px; line-height: 20px; font-weight: normal; font-family: 'DINRegular';  text-align: left;">
+                        <div class="container"
+                             style="padding-left: 15px; color: #4DC7E9; font-size: 20px; line-height: 20px; font-weight: normal; font-family: 'DINRegular';  text-align: left;">
                             E-MAIL
                         </div>
                         <div class="form-group">
                             <div class="col-sm-8">
-                                <input style="border: 1px solid #4DC7E9; color: #4DC7E9; font-family: 'DINRegular'; background-color: transparent; border-radius: 0; width: 510px; margin-left: 15px;" type="text" class="form-control" id="Request_client_email" name="Request[client_email]" value=""/>
+                                <input style="border: 1px solid #4DC7E9; color: #4DC7E9; font-family: 'DINRegular'; background-color: transparent; border-radius: 0; width: 510px; margin-left: 15px;"
+                                       type="text" class="form-control" id="Request_client_email"
+                                       name="Request[client_email]" value=""/>
                             </div>
                         </div>
-                        <div class="container" style="padding-left: 15px; color: #4DC7E9; font-size: 20px; line-height: 20px; font-weight: normal; font-family: 'DINRegular';  text-align: left;">
+                        <div class="container"
+                             style="padding-left: 15px; color: #4DC7E9; font-size: 20px; line-height: 20px; font-weight: normal; font-family: 'DINRegular';  text-align: left;">
                             TRIMITE MESAJ
                         </div>
                         <div class="form-group">
                             <div class="col-sm-8">
-                                <textarea style="border: 1px solid #4DC7E9; color: #4DC7E9; font-family: 'DINRegular'; background-color: transparent; border-radius: 0; width: 510px; margin-left: 15px;" class="form-control" id="Request_colab_request" name="Request1[colab_request]" rows="8"></textarea>
+                                <textarea
+                                        style="border: 1px solid #4DC7E9; color: #4DC7E9; font-family: 'DINRegular'; background-color: transparent; border-radius: 0; width: 510px; margin-left: 15px;"
+                                        class="form-control" id="Request_colab_request" name="Request1[colab_request]"
+                                        rows="8"></textarea>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="modal-footer" style="border-top-width: 0; padding:0 20px 20px; margin-top:-15px; margin-right: 15px;">
-                    <button id="submitButton2" style="font-family: 'DINRegular';  color: #4DC7E9; font-size: 20px; padding: 3px 30px 3px 30px; background-color: transparent; border: 1px solid #4DC7E9; border-top: 0; border-radius: 0;" type="submit" class="btn btn-success active">
+                <div class="modal-footer"
+                     style="border-top-width: 0; padding:0 20px 20px; margin-top:-15px; margin-right: 15px;">
+                    <button id="submitButton2"
+                            style="font-family: 'DINRegular';  color: #4DC7E9; font-size: 20px; padding: 3px 30px 3px 30px; background-color: transparent; border: 1px solid #4DC7E9; border-top: 0; border-radius: 0;"
+                            type="submit" class="btn btn-success active">
                         TRIMITE
                     </button>
                 </div>
@@ -127,12 +226,58 @@
 <script type="text/javascript" src="slick/slick.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/deakCommon.js"></script>
+<script>
+    setTimeout(function () {
+        if ($.cookie('isLoggedIn') == 'true') {
+            //alert($.cookie('isLoggedIn'));
+            $('#client_project').css('display', 'block');
+            $('#log_out').css('display', 'block');
+            $('#log_in').css('display', 'none');
 
+        }
+    }, 300);
+    var isLoggedIn = false;
+    function check(form) {
+        if (form.userid.value == "048/2014" && form.passwrd.value == "admin") {
+            isLoggedIn = true;
+            document.cookie = "isLoggedIn=true;";
+        }
+        return false;
+    }
+    function delcookie() {
+        $.cookie('isLoggedIn', null);
+    }
+
+    $('.modal-user-login').validate({
+        rules: {
+            userid: {
+                required: true,
+                minlength: 6
+            },
+            passwrd: {
+                required: true,
+                minlength: 5
+            }
+        },
+        messages: {
+            userid: 'Introduceti va rog numarul de contract! ',
+            passwrd: 'Intruduceti parola primita!'
+        }
+    });
+    var hashTag = location.hash;
+    if (hashTag === '#portofoliu') {
+        $('#constructii-nerez').addClass('hidden');
+        $('#constructii-rez').addClass('hidden');
+    } else if (hashTag === '#constructii') {
+        $('#portofoliu-ans').addClass('hidden');
+        $('#portofoliu-rez').addClass('hidden');
+    }
+</script>
 <script>
     $(document).ready(function () {
         getPage();
-        $("nav a").not(":last").click(function () {
-            console.log('mesaj');
+        $("nav li").not(":last").click(function () {
+//            console.log('mesaj');
             // Destroy the old Backstretches
             $(":backstretch").each(function () {
                 $(this).data("backstretch").destroy();

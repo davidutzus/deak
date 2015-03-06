@@ -186,18 +186,24 @@ body {
     padding: 0;
     margin-left: -40px;
     list-style: none;
-    /*padding: 20px 0 0 0;*/
-    /*display: table-cell;*/
+    background-color: transparent;
 }
 
 .sidebar li {
     list-style: none;
-    margin: 0;
     padding: 0;
     line-height: 40px;
     text-decoration: none;
     color: #57787F;
     font-size: 14px;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #57787F;
+    border-radius: 0 !important;
+}
+.sidebar li#log_in,
+.sidebar li#log_out{
+    border-bottom: none;
 }
 
 .sidebar li a {

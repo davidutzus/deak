@@ -50,6 +50,8 @@
                          onmouseout="this.src='images/facebook.png';"></a>
         <a href="#"><img src="images/pinterest.png" alt="Facebook" onmouseover="this.src='images/pinterest_black.png';"
                          onmouseout="this.src='images/pinterest.png';"></a>
+        <a href="#"><img src="images/blog.png" alt="Blog" onmouseover="this.src='images/blog_black.png';"
+                         onmouseout="this.src='images/blog.png';"></a>
     </div>
 </div>
 <!------------------------- / top menu --------------------------------->
@@ -106,8 +108,8 @@
                         <!-- End modal login-->
                         <!-- meniu -->
                         <ul class="list-group">
-                            <li id="prj-all" class="list-group-item navSection nav-section">
-                                <a onclick="displayAllProject()" class="currentLink">TOATE PROIECTELE</a>
+                            <li id="prj-all" class="list-group-item navSection nav-section currentLink">
+                                <a onclick="displayAllProject()">TOATE PROIECTELE</a>
                             </li>
                             <li id="portofoliu-ans" class="list-group-item navSection nav-section">
                                 <a onclick="hidePortofoliuRezidentiale();">ANSAMBLURI (PORTOFOLIU)</a>
@@ -121,8 +123,14 @@
                             <li id="constructii-rez" class="list-group-item navSection nav-section">
                                 <a onclick="hideConstructiiNerezidentiale()">REZIDENTIALE (CONSTRUCTII)</a>
                             </li>
-                            <li id="client_project" style="display: none;" class="list-group-item">
-                                <a onclick="showclientproject()" style="cursor: pointer;">048/2014</a>
+                            <li id="sidebar-autorizatie-constructie" class="list-group-item navSection nav-section currentLink">
+                                <a>AUTORIZATIA DE CONSTRUCTIE</a>
+                            </li>
+                            <li id="sidebar-studiul-temale" class="list-group-item navSection nav-section">
+                                <a>STUDIUL DE TEMALE</a>
+                            </li>
+                            <li id="client_project" class="list-group-item navSection nav-section">
+                                <a onclick="showclientproject(); initializareSlider()" style="cursor: pointer;">048/2014</a>
                             </li>
                             <li id="log_in" class="list-group-item">
                                 <a data-toggle="modal" data-target="#requestLoginModal" class="btn-login"
@@ -236,6 +244,32 @@
 
         }
     }, 300);
+    var titles = [
+        'Title Bar 1',
+        'Title Bar 2',
+        'Title Bar 3',
+        'Title Bar 4'
+    ];
+
+    $(window).scroll(function(){
+        var pos = $(this).scrollTop();
+
+        if(pos < 200) {
+            $('.top').slideUp().text(titles[0]);
+        }
+        if(pos > 200) {
+            $('.top').slideDown();
+        }
+        if(pos > 700) {
+            $('.top').text(titles[1]);
+        }
+        if(pos > 1300) {
+            $('.top').text(titles[2]);
+        }
+        if(pos > 1800) {
+            $('.top').text(titles[3]);
+        }
+    });
     var isLoggedIn = false;
     function check(form) {
         if (form.userid.value == "048/2014" && form.passwrd.value == "admin") {
@@ -264,14 +298,6 @@
             passwrd: 'Intruduceti parola primita!'
         }
     });
-    var hashTag = location.hash;
-    if (hashTag === '#portofoliu') {
-        $('#constructii-nerez').addClass('hidden');
-        $('#constructii-rez').addClass('hidden');
-    } else if (hashTag === '#constructii') {
-        $('#portofoliu-ans').addClass('hidden');
-        $('#portofoliu-rez').addClass('hidden');
-    }
 </script>
 <script>
     $(document).ready(function () {

@@ -161,7 +161,7 @@ body {
 
 #header .btn_social {
     position: relative;
-    width: 100px;
+    width: 120px;
     margin: 48px 20px 0 1185px;
 }
 
@@ -210,17 +210,16 @@ body {
     font-family: 'DINRegular';
     text-decoration: none;
     color: #57787F;
+    cursor: pointer;
 }
 
 .sidebar li a:hover {
     text-decoration: none;
     font-weight: bold;
     color: #4DC7E9;
-    /*font-size:14pt;*/
-    /*font-family: 'DINMedium';*/
 }
 
-.currentLink {
+.currentLink a {
     text-decoration: none;
     font-weight: bold;
     color: #4DC7E9 !important;
@@ -708,7 +707,75 @@ span.text-content span {
     font-size: 20px;
     outline: 0;
 }
+.top {
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background: #aaa;
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    display: none;
+    width: auto;
+    right: 40px;
+}
+/*----------- Info proiect ------------------------*/
+.tab-info-proiect .nav-tabs{
+    border-bottom: 1px solid #444;
+    max-width: 850px;
+}
+.tab-info-proiect .nav-tabs li{
 
+}
+.tab-info-proiect .nav-tabs>li:last-child a{
+    background: url("/images/buton-tab-last.png") transparent no-repeat right;
+}
+.tab-info-proiect .nav-tabs>li.active>a,
+.tab-info-proiect .nav-tabs>li.active>a:hover,
+.tab-info-proiect .nav-tabs>li.active>a:focus {
+    color: #4DC7E9;
+    background: url("/images/buton-tab-activ.png") transparent no-repeat right;
+    font-weight: bold;
+    cursor: default;
+    border: 0;
+    border-bottom-color: transparent;
+}
+.tab-info-proiect .nav-tabs>li.active>a,
+.tab-info-proiect .nav-tabs>li.active>a:hover,
+.tab-info-proiect .nav-tabs>li.active>a:focus {
+    color: #4DC7E9;
+    background: url("/images/buton-tab-activ.png") transparent no-repeat right;
+    font-weight: bold;
+    cursor: default;
+    border: 0;
+    border-bottom-color: transparent;
+}
+.tab-info-proiect .nav-tabs>li>a{
+    color: #57787F;
+    background: url("/images/buton-tab.png") transparent no-repeat right;
+    padding: 8px 56px;
+    border-radius: 0;
+    margin: 0;
+    font-weight: bold;
+    border-top: 2px solid  #57787f;
+}
+.tab-info-proiect .nav-tabs>li>a:hover {
+    color: #57787F;
+    border-color: #444;
+    background-color: #333;
+}
+/*----------- / Info proiect ------------------------*/
+/*------------Pagina Info Proiectare ----------------*/
+#pag-info-proiecte-autorizatie h2{
+    margin-top: 0;
+    font-size: 21px;
+    color: #4dc7e9;
+}
+#pag-info-proiecte-temale h2{
+    font-size: 21px;
+    color: #4dc7e9;
+}
+/*------------Pagina Info Proiectare ----------------*/
 /*-----------En Scroll------------------------*/
 
 .track3 {
@@ -853,11 +920,11 @@ li.slick-active div {
     display: block;
     position: absolute;
     background: url(../images/slick-left.png) no-repeat;
-    height: 29px;
-    width: 28px;
+    height: 40px;
+    width: 40px;
     box-shadow: none;
     top: auto !important;
-    bottom: 25px;
+    bottom: 24px;
     z-index: 1000;
 }
 
@@ -869,10 +936,10 @@ li.slick-active div {
     right: 0;
     display: block;
     background: url(../images/slick-right.png) no-repeat;
-    height: 29px;
-    width: 28px;
+    height: 40px;
+    width: 40px;
     box-shadow: none;
-    bottom: 26px;
+    bottom: 24px;
     top: auto !important;
 
 }
@@ -910,14 +977,9 @@ button.close {
     display: block;
     position: relative;
     float: left;
-    width: 770px;
-    /*height: 200px;*/
+    width:850px;
+    border: 2px solid #4dc7e9;
     margin: 0 0 50px 0;
-    /*min-height: 600px;*/
-    /*height: 400px;*/
-    /*top: -145px;*/
-    /*background: yellow;*/
-    /*border: 1px solid yellow;*/
 }
 
 .documents .pdf-title {

@@ -29,11 +29,11 @@ function resizeAll() {
     $('.slide').find('img').width(origWidth);
     $('.slide').width(origWidth);
 
-    var slickArrowLeftWidth = $(window).width()/2 - 35;
+    var slickArrowLeftWidth = $(window).width()/2 - 80;
     $('#portofoliuFullScreen').find('.slick-prev').css('left', slickArrowLeftWidth + 'px');
     $('#slickFullscreenLeft').find('.slick-prev').css('left', slickArrowLeftWidth + 'px');
 
-    var slickArrowRightWidth = $(window).width()/2 - 63;
+    var slickArrowRightWidth = $(window).width()/2 - 60;
     $('#portofoliuFullScreen').find('.slick-next').css('right', slickArrowRightWidth + 'px');
     $('#slickFullscreenLeft').find('.slick-next').css('right', slickArrowRightWidth + 'px');
 
@@ -64,7 +64,7 @@ window.onresize = resizeAll;
         $('.portofoliu').animate({scrollTop: '+=' + $(window).height() + 'px'}, 800);
     });
 /*--------------------------Slick galleries script-------------------------------------------------*/
-
+function initializareSlider() {
     $('.slideshow-first').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -72,81 +72,81 @@ window.onresize = resizeAll;
         infinite: true,
         autoplaySpeed: 2000,
         arrows: false,
-        autoplay : true,
+        autoplay: true,
         speed: 300
     });
 
 
-$('.portofoliu-top-image').slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	fade: true,
-	arrows: true,
-	autoplay : true,
-	speed: 300
-});
+    $('.portofoliu-top-image').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: true,
+        autoplay: true,
+        speed: 300
+    });
 
-$('#portofoliu-slider-interior').slick({
-	dots: true,
-	infinite: true,
-	autoplay : false,
-	speed: 300,
-	slidesToShow: 1,
-	slidesToScroll: 1
-});
-
-    $('#portofoliu-slider-interior ul li').each(function (index) {
-            $(this).html('<div style="float: left; margin-left: -10px; width: 25px; height: 15px; border: 1px solid #4DC7E9; -webkit-border-radius: 0 0 10px 0; -moz-border-radius: 0 0 10px 0; -khtml-border-radius: 0 0 10px 0; border-radius: 0 0 10px 0; z-index: 15;"></div>');
-        });
-        
-$('#portofoliu-slider-exterior').slick({
-	dots: true,
-	infinite: true,
-	autoplay : false,
-	speed: 300,
-	slidesToShow: 1,
-	slidesToScroll: 1
-});
-
-    $('#portofoliu-slider-exterior ul li').each(function (index) {
-            $(this).html('<div style="width: 25px; height: 15px; border: 1px solid #4DC7E9; -webkit-border-radius: 0 0 10px 0; -moz-border-radius: 0 0 10px 0; -khtml-border-radius: 0 0 10px 0; border-radius: 0 0 10px 0;"></div>');
-        });
-
-$('#slickFullscreenLeft').slick({
+    $('#portofoliu-slider-interior').slick({
         dots: true,
         infinite: true,
-        autoplay : false,
+        autoplay: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
+    $('#portofoliu-slider-interior ul li').each(function (index) {
+        $(this).html('<div style="float: left; margin-left: -10px; width: 25px; height: 15px; border: 1px solid #4DC7E9; -webkit-border-radius: 0 0 10px 0; -moz-border-radius: 0 0 10px 0; -khtml-border-radius: 0 0 10px 0; border-radius: 0 0 10px 0; z-index: 15;"></div>');
+    });
+
+    $('#portofoliu-slider-exterior').slick({
+        dots: true,
+        infinite: true,
+        autoplay: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
+    $('#portofoliu-slider-exterior ul li').each(function (index) {
+        $(this).html('<div style="width: 25px; height: 15px; border: 1px solid #4DC7E9; -webkit-border-radius: 0 0 10px 0; -moz-border-radius: 0 0 10px 0; -khtml-border-radius: 0 0 10px 0; border-radius: 0 0 10px 0;"></div>');
+    });
+
+    $('#slickFullscreenLeft').slick({
+        dots: true,
+        infinite: true,
+        autoplay: false,
         speed: 300,
         slidesToShow: 1,
         variableWidth: true,
         centerMode: true,
         slidesToScroll: 1
-});
+    });
 
     $('#slickFullscreenLeft ul li').each(function (index) {
         $(this).html('<div style="float: left; margin-left: -10px; width: 25px; height: 15px; border: 1px solid #4DC7E9; -webkit-border-radius: 0 0 10px 0; -moz-border-radius: 0 0 10px 0; -khtml-border-radius: 0 0 10px 0; border-radius: 0 0 10px 0;"></div>');
     });
 
-$('#portofoliuFullScreen').slick({
+    $('#portofoliuFullScreen').slick({
         dots: true,
         infinite: true,
-        autoplay : false,
+        autoplay: false,
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
         variableWidth: true,
         centerMode: true,
         centerPadding: '130px'
-});
+    });
 
     $('#portofoliuFullScreen ul li').each(function (index) {
-            $(this).html('<div style="position: relative; bottom: 10px; left: 10px; width: 25px; height: 15px; border: 1px solid #4DC7E9; -webkit-border-radius: 0 0 10px 0; -moz-border-radius: 0 0 10px 0; -khtml-border-radius: 0 0 10px 0; border-radius: 0 0 10px 0;"></div>');
-        });
+        $(this).html('<div style="position: relative; bottom: 10px; left: 10px; width: 25px; height: 15px; border: 1px solid #4DC7E9; -webkit-border-radius: 0 0 10px 0; -moz-border-radius: 0 0 10px 0; -khtml-border-radius: 0 0 10px 0; border-radius: 0 0 10px 0;"></div>');
+    });
 
-$('#portofoliuFullScreen1').slick({
+    $('#portofoliuFullScreen1').slick({
         dots: true,
         infinite: true,
-        autoplay : true,
+        autoplay: true,
         arrows: true,
         speed: 300,
         slidesToShow: 1,
@@ -154,7 +154,7 @@ $('#portofoliuFullScreen1').slick({
         variableWidth: true,
         centerMode: true,
         centerPadding: '130px'
-});
+    });
 
     $('#portofoliuFullScreen1 ul li').each(function (index) {
         $(this).html('<div style="position: relative; bottom: 10px; left: 10px; width: 25px; height: 15px; border: 1px solid #4DC7E9; -webkit-border-radius: 0 0 10px 0; -moz-border-radius: 0 0 10px 0; -khtml-border-radius: 0 0 10px 0; border-radius: 0 0 10px 0;"></div>');
@@ -163,7 +163,7 @@ $('#portofoliuFullScreen1').slick({
     $('#slider-client').slick({
         dots: true,
         infinite: true,
-        autoplay : true,
+        autoplay: true,
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1
@@ -173,11 +173,11 @@ $('#portofoliuFullScreen1').slick({
         $(this).html('<div style="float: left; margin-left: -10px; width: 25px; height: 15px; border: 1px solid #4DC7E9; -webkit-border-radius: 0 0 10px 0; -moz-border-radius: 0 0 10px 0; -khtml-border-radius: 0 0 10px 0; border-radius: 0 0 10px 0; z-index: 15;"></div>');
     });
 
-    $('form[href^="#"]').on('click', function(event) {
+    $('form[href^="#"]').on('click', function (event) {
 
-        var target = $( $(this).attr('href') );
+        var target = $($(this).attr('href'));
 
-        if( target.length ) {
+        if (target.length) {
             event.preventDefault();
             $('.col-pr').animate({
                 scrollTop: target.offset().top
@@ -185,6 +185,8 @@ $('#portofoliuFullScreen1').slick({
         }
 
     });
+    return initializareSlider();
+}
 /*--------------------------End of Slick galleries script----------------------------------------------------*/
 
 /*--------------------------Lazy loading for portofoliu------------------------------------------------------*/
@@ -204,7 +206,4 @@ $('#portofoliuFullScreen1').slick({
         // Scroll
         $('html,body').animate({scrollTop: $("#"+rezidentiale).offset().top},'slow');
     }
-
-
-
 });
